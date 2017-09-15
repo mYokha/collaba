@@ -1,0 +1,13 @@
+{
+  "name": "collaba",
+  "version": "0.0.1",
+  "description": "It's for learning front-end built on React",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mYokha/collaba.git"
+  },
+  "author": "mYokha and modestfake",
+  "license": "ISC",
+  "homepage": "https://github.com/mYokha/collaba#readme"
+}
