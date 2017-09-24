@@ -15,7 +15,7 @@ const plugins = [
 ]
 
 module.exports = {
-  entry: './index.jsx',
+  entry: './app/index.jsx',
   output: {
     publicPath: '/',
     path: path.join(__dirname, 'static'),

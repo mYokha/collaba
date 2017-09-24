@@ -1,5 +1,6 @@
 import React from 'react'
 import photo from '../assets/img/test.jpg'
+import './styles/styles.scss'
 
 export default class App extends React.Component {
   render () {
