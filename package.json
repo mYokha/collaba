@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "It's for learning front-end built on React",
   "scripts": {
-    "start": "webpack-dev-server --hot --colors",
+    "start": "webpack-dev-server --hot --colors --open",
     "build": "NODE_ENV=production webpack -p --progress",
     "test": "npm run lint",
     "lint": "eslint ."
