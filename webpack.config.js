@@ -28,7 +28,7 @@ module.exports = {
     ],
     extensions: ['.js', '.jsx']
   },
-  devtool: process.env['NODE_ENV'] === 'production' ? '' : 'source-map',
+  devtool: 'source-map',
   devServer: {
     contentBase: './static',
     compress: true,
