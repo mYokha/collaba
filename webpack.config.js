@@ -42,7 +42,6 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         use: ['babel-loader', 'eslint-loader'],
-        include: path.resolve(__dirname, 'app'),
         exclude: /node_modules/
       },
       {
