@@ -2,12 +2,47 @@
   "name": "collaba",
   "version": "0.0.1",
   "description": "It's for learning front-end built on React",
-  "scripts": {},
+  "scripts": {
+    "start": "webpack-dev-server --hot --colors",
+    "build": "NODE_ENV=production webpack -p --progress",
+    "test": "npm run lint",
+    "lint": "eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mYokha/collaba.git"
   },
   "author": "mYokha and modestfake",
   "license": "ISC",
-  "homepage": "https://github.com/mYokha/collaba#readme"
+  "homepage": "https://github.com/mYokha/collaba#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "eslint": "^4.7.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "standard": "^10.0.3",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
 }
