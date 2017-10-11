@@ -8,7 +8,7 @@
     "react"
   ],
   "rules": {
-    "indent": ["error", 2, { "MemberExpression": 0 }],
+    "indent": ["error", 2, { "MemberExpression": "off" }],
     "no-unused-vars": "warn",
     "react/prop-types": "warn"
   }

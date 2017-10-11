@@ -10,7 +10,7 @@ const plugins = [
   new HtmlWebpackPlugin({
     chunk: 'index',
     filename: 'index.html',
-    template: './templates/index.html'
+    template: './app/index.html'
   })
 ]
 
