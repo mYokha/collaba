@@ -4,33 +4,33 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const plugins = [
   new CleanWebpackPlugin(
-    ['static/*'],
+    ['public/*'],
     { verbose: true }
   ),
   new HtmlWebpackPlugin({
     chunk: 'index',
     filename: 'index.html',
-    template: './app/index.html'
+    template: './src/index.html'
   })
 ]
 
 module.exports = {
-  entry: './app/index.jsx',
+  entry: './src/index.jsx',
   output: {
     publicPath: '/',
-    path: path.join(__dirname, 'static'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
   resolve: {
     modules: [
-      path.resolve(__dirname, 'app'),
+      path.resolve(__dirname, 'src'),
       'node_modules'
     ],
     extensions: ['.js', '.jsx']
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: './static',
+    contentBase: './public',
     compress: true,
     historyApiFallback: true,
     https: true,
